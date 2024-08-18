@@ -1,4 +1,4 @@
-import { Album } from "../types";
+import { Album } from "../../types";
 import styles from "./Albums.module.css";
 import { Link } from "react-router-dom";
 

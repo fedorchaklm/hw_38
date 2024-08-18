@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { Photo } from "../types";
+import { Photo } from "../../types";
 import styles from './AlbumCard.module.css';
 
 export default function AlbumCard() {

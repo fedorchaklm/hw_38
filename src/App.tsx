@@ -6,12 +6,12 @@ import {
   Routes,
 } from "react-router-dom";
 import styles from "./App.module.css";
-import Main from "./components/Main";
+import Main from "./components/Main/Main";
 import { useEffect, useState } from "react";
-import Albums from "./components/Albums";
-import AlbumCard from "./components/AlbumCard";
+import Albums from "./components/Albums/Albums";
+import AlbumCard from "./components/AlbumCard/AlbumCard";
 import { Album } from "./types";
-import About from "./components/About";
+import About from "./components/About/About";
 
 function App() {
   const getLinkClass = ({ isActive }: NavLinkRenderProps) =>
