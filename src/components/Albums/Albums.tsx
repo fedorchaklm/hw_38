@@ -1,12 +1,11 @@
-import { Album } from "../../types";
+import { useContext } from "react";
+// import { Album } from "../../types";
 import styles from "./Albums.module.css";
 import { Link } from "react-router-dom";
+import { AlbumsContext } from "../../context/AlbumsProvider";
 
-type Props = {
-  albums: Array<Album>;
-};
-
-export default function Albums({ albums }: Props): JSX.Element {
+export default function Albums() {
+  const albums = useContext(AlbumsContext);
   return (
     <ul className={styles.albumList}>
       {albums.map((album) => (
